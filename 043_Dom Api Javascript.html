@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus alias aliquam ut officiis a facilis explicabo culpa, ipsa 
+        ea velit molestiae reprehenderit impedit quas excepturi deserunt accusamus reiciendis dolorem iusto iure distinctio quis vero consequatur quam. Optio ea 
+        illum veritatis, pariatur
+        corrupti deserunt eligendi ipsam exercitationem. Iste, ipsum distinctio?</p>
+
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus alias aliquam ut officiis a facilis explicabo culpa, ipsa 
+        ea velit molestiae reprehenderit impedit quas excepturi deserunt accusamus reiciendis dolorem iusto iure distinctio quis vero consequatur quam. Optio ea 
+        illum veritatis, pariatur
+        corrupti deserunt eligendi ipsam exercitationem. Iste, ipsum distinctio?</p>
+
+
+     <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus alias aliquam ut officiis a facilis explicabo culpa, ipsa 
+        ea velit molestiae reprehenderit impedit quas excepturi deserunt accusamus reiciendis dolorem iusto iure distinctio quis vero consequatur quam. Optio ea 
+        illum veritatis, pariatur
+        corrupti deserunt eligendi ipsam exercitationem. Iste, ipsum distinctio?</p>\
+
+        <script>
+            var paragraf = document.getElementsByClassName("paragraf");
+            console.log(paragraf)
+            setInterval(function(){
+                paragraf[0].style.color = "red";
+                paragraf[1].style.color = "green";
+                paragraf[2].style.color = "blue";
+
+                setTimeout(function(){
+                    paragraf[0].style.color = "black";
+                    paragraf[1].style.color = "black";
+                    paragraf[2].style.color = "black";
+                }, 500)
+            }, 1000);
+        </script>
+</body>
+</html>
